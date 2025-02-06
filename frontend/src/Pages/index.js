@@ -1,0 +1,15 @@
+export { default as Home } from "./Home";
+export { default as AuthRegis } from "./AuthRegis/AuthRegis";
+export { default as Technologie } from "./Technologie";
+export { default as Education } from "./Education";
+export { default as Sport } from "./Sport";
+export { default as Anime } from "./Anime";
+export { default as Music } from "./Music";
+export {default as Memes} from './Memes';
+export {default as Entertainment} from './Entertainment';
+export { default as SearchModal } from "./SearchModal/SearchModal";
+export { default as PostDetail } from "./PostDetail/PostDetail";
+export { default as PostsPage } from "./PostsPage/PostPage";
+export { default as UsersProfile } from "./UsersProfile/UsersProfile";
+export { default as Clans } from './Clans/Clans';
+export { default as ClanDetail } from './ClanDetail/ClanDetail';

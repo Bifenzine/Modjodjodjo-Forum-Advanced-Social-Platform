@@ -1,0 +1,155 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply bg-gradient-to-br from-background-dark to-background-light text-text;
+}
+
+.App {
+  @apply min-h-screen flex;
+}
+
+.main {
+  @apply flex-1 p-4 sm:p-6;
+}
+
+/* Custom scrollbar styles */
+/* For WebKit browsers (Chrome, Safari, newer versions of Edge) */
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-light;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme("colors.primary.DEFAULT") theme("colors.surface.dark");
+}
+
+/* Glassmorphism effect for cards */
+.glass-card {
+  @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-lg;
+}
+
+/* Neon text effect */
+.neon-text {
+  @apply text-primary-light font-bold;
+  text-shadow: 0 0 5px theme("colors.primary.DEFAULT"),
+    0 0 10px theme("colors.primary.DEFAULT"),
+    0 0 15px theme("colors.primary.DEFAULT"),
+    0 0 20px theme("colors.primary.DEFAULT");
+}
+
+/* Gradient button */
+.gradient-button {
+  @apply bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-secondary-dark text-text font-bold py-2 px-4 rounded-full transition-all duration-300;
+}
+
+.gradient-color {
+  @apply bg-gradient-to-br from-background-dark to-background-light;
+}
+@keyframes floatRandom {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(10px, -20px, 10px);
+  }
+  50% {
+    transform: translate3d(-20px, 10px, -15px);
+  }
+  75% {
+    transform: translate3d(15px, -10px, 20px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes floatRandomSlow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(-5px, 15px, -5px);
+  }
+  50% {
+    transform: translate3d(15px, -10px, 10px);
+  }
+  75% {
+    transform: translate3d(-10px, 5px, -10px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes floatRandomFast {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(20px, -15px, 15px);
+  }
+  50% {
+    transform: translate3d(-25px, 20px, -20px);
+  }
+  75% {
+    transform: translate3d(30px, -10px, 25px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-float-random {
+  animation: floatRandom 8s ease-in-out infinite;
+}
+
+.animate-float-random-slow {
+  animation: floatRandomSlow 12s ease-in-out infinite;
+}
+
+.animate-float-random-fast {
+  animation: floatRandomFast 5s ease-in-out infinite;
+}
+
+@keyframes gradientWind {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-wind {
+  background: linear-gradient(
+    -45deg,
+    #3498db,
+    #9b59b6,
+    #e74c3c,
+    #f39c12,
+    #2ecc71
+  );
+  background-size: 300% 300%;
+  animation: gradientWind 10s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

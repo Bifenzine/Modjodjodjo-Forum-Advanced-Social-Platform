@@ -1,0 +1,55 @@
+.MuiTabs-root {
+  /* height: 100vh; */
+  /* border: 1px solid black; */
+  @apply w-[11rem];
+}
+
+.MuiTabs-scroller {
+  margin-top: 2rem;
+  border-top: 1px solid cadetblue !important;
+}
+
+.Navtabs {
+  @apply border-r;
+  @apply border-b;
+  @apply border-r-cyan-500;
+  @apply border-b-cyan-500;
+  @apply fixed;
+  @apply overflow-auto;
+}
+
+.tablast {
+  border-bottom: 1px solid cadetblue !important;
+}
+
+.Tabnav {
+  color: azure !important;
+}
+.Tabnav:focus {
+  border-top: 1px solid cadetblue !important;
+  border-bottom: 1px solid cadetblue !important;
+}
+.lasttab {
+  border-bottom: 1px solid cadetblue !important;
+}
+.MuiTabs-indicator {
+  width: 10px !important;
+  background-color: cadetblue !important;
+}
+.div-img {
+  height: 6rem !important;
+  width: 6rem !important;
+}
+.img {
+  height: 6rem !important;
+  width: 6rem !important;
+}
+.btn {
+  background-color: cadetblue !important;
+  color: white !important;
+}
+.register .logout {
+  margin-top: 7rem !important;
+  border-top: 1px solid cadetblue !important;
+  border-bottom: 1px solid cadetblue !important;
+}

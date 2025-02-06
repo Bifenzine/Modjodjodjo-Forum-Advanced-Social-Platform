@@ -1,0 +1,12 @@
+.MuiPaper-root {
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  top: 4.3rem !important;
+  height: inherit !important;
+  @apply border-t-2 border-l-2 border-primary;
+  @apply fixed;
+  @apply h-[70vh];
+
+}
+
+
